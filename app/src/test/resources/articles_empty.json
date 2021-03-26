@@ -1,0 +1,13 @@
+{
+  "data": {
+    "curPage": 1,
+    "datas": [],
+    "offset": 0,
+    "over": true,
+    "pageCount": 0,
+    "size": 20,
+    "total": 0
+  },
+  "errorCode": 0,
+  "errorMsg": ""
+}
