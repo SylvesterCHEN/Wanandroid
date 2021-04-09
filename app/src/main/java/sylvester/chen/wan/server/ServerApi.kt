@@ -17,7 +17,7 @@ interface ServerApi {
   // https://wanandroid.com/wxarticle/list/405/1/json?k=Java
   @GET("wxarticle/list/{wechatId}/{page}/json")
   suspend fun weArticles(
-    @Path("wechatId") wechatId: Int,
+    @Path("wechatId") wechatId: String,
     @Path("page") page: Int,
     @Query("k") search: String? = null
   ): Response<PagedArticle>
@@ -39,7 +39,7 @@ interface ServerApi {
 
   // https://www.wanandroid.com/article/top/json
   @GET("article/top/json")
-  suspend fun popArticles(): Response<PagedArticle>
+  suspend fun popArticles(): Response<List<Article>>
 
   // https://www.wanandroid.com/article/query/0/json
   @POST("article/query/{page}/json")

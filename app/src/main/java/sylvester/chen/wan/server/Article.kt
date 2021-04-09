@@ -68,7 +68,7 @@ data class Article(
   @SerializedName("visible")
   val visible: Int,
   @SerializedName("zan")
-  val zan: Int
+  val favours: Int
 ) {
   data class Tag(
     @SerializedName("name")
