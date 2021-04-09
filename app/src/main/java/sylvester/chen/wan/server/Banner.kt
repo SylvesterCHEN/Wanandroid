@@ -10,7 +10,7 @@ data class Banner(
   @SerializedName("imagePath")
   val imagePath: String,
   @SerializedName("isVisible")
-  val isVisible: Int,
+  val visible: Int,
   @SerializedName("order")
   val order: Int,
   @SerializedName("title")
